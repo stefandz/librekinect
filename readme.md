@@ -102,6 +102,8 @@ git clone https://github.com/xxorde/librekinect.git
 cd librekinect
 
 make
+
+# you should have your Kinect plugged in before loading
 make load
 ```
 That worked on my pi with the current version of Raspbian. It will take some time, if you loose the connection use "tmux attach".
