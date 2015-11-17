@@ -76,6 +76,11 @@ cd /usr/src/linux
 make mrproper
 
 # get your config
+
+# for newer versions of Raspberry Pi Linux you might need this
+# try it if the gzip command below fails
+modprobe configs
+
 gzip -dc /proc/config.gz > .config
 
 # building, that is going to take a while!
